@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv('modfied_card.csv')
+dataset = pd.read_csv('filename.csv')
 
 X = dataset.iloc[:,:-1].values
 y = dataset.iloc[:,-1].values
@@ -55,7 +55,7 @@ print(y_train)
 
 
 
-dataset1 = pd.read_csv('datazz.csv')
+dataset1 = pd.read_csv('filename.csv')
 
 X1 = dataset1.iloc[:,:-1].values
 y1 = dataset1.iloc[:,-1].values
@@ -87,7 +87,7 @@ from sklearn.metrics import accuracy_score
 lol = accuracy_score(z, y_lol)
 print(lol)
 
-zz = pd.read_csv('abc.csv')
+zz = pd.read_csv('filename.csv')
 ya = zz.iloc[:,-1].values
 ya = encoder.transform(ya)
 
